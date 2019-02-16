@@ -8,13 +8,18 @@
   <link rel="stylesheet" href="inc/desktop.css" media="all and (min-width:768px)">
   <!--[if (lt IE 9)&(!IEMobile)]><link rel="stylesheet" href="inc/desktop.css" media="all"><![endif]-->
   <!--[if lt IE 9]><script src="inc/html5.js"></script><![endif]-->
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script src="inc/jquery.min.js"></script>
   <script src="inc/init.js"></script>
-  </head>
-  <body style="zoom: 1;">
+</head>
+
+<body style="zoom: 1;">
   <header class="header">
     <div class="wrapper cf">
-      <p class="logo"><a href="index.html" title="[Go to homepage]"><img src="design/logo.png" alt=""></a></p>
+      <p class="logo"><a href="index.html" title="[Go to homepage]"><img src="design/logo.png" width="150px;" alt=""></a></p>
       <nav class="nav cf" id="nav">
         <ul>
           <li class="current"></li>
@@ -23,50 +28,89 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li> -->
         </ul>
-      <select><option selected="selected" value="">Choose category...</option><option value="index.html">Homepage</option><option value="#">Our products</option><option value="subpage.html">Our works</option><option value="#">Blog</option><option value="#">Contact</option><option selected="selected" value="">Choose category...</option><option value="index.html">Homepage</option></select><select><option selected="selected" value="">Choose category...</option><option value="index.html">Homepage</option></select></nav>
+        <select>
+          <option selected="selected" value="">Choose category...</option>
+          <option value="index.html">Homepage</option>
+          <option value="#">Our products</option>
+          <option value="subpage.html">Our works</option>
+          <option value="#">Blog</option>
+          <option value="#">Contact</option>
+          <option selected="selected" value="">Choose category...</option>
+          <option value="index.html">Homepage</option>
+        <option selected="selected" value="">Choose category...</option></select><select>
+          <option selected="selected" value="">Choose category...</option>
+          <option value="index.html">Homepage</option>
+        <option selected="selected" value="">Choose category...</option></select>
+      <select><option selected="selected" value="">Choose category...</option></select></nav>
     </div>
   </header>
   <div class="main">
     <div class="wrapper cf">
       <hgroup>
-        <h1 style='color:black;'>Revolutionalize your Foodtruck</h1>
-        <h3>Help bring new customer to your business
-  </h3>
+        <h1 style="color:black;">Online Ordering App</h1>
+        <p>FeedWheel helps find and book best local food trucks. We make finding and ordering your favorite food
+          convenient and worry free.
+        </p>
       </hgroup>
-      
+
       <div class="iphone-smaller"> <img src="images/screen-02.jpg" alt=""> </div>
       <div class="iphone-bigger"> <img src="images/screen-01.jpg" alt=""> </div>
     </div>
   </div>
   <div class="introduction" style="background: black;">
-    <div class="wrapper cf" >
-      <div class="half introduction-image" > <img src="design/iphone-hand.png" alt=""> </div>
+    <div class="wrapper cf">
+      <div class="half introduction-image"> <img src="https://res.cloudinary.com/dgiwxbpln/image/upload/c_scale,dpr_auto,f_auto,w_470/v1550292469/apple-email-iphone-17663_ywlu6l.jpg" alt=""> </div>
       <div class="half introduction-text">
         <p>The power is in your hands.</p>
+        <p style="font-size:16px;font-weight:12;">We take care of all of the hard work of setting everything up so you don't have to.</p>
       </div>
     </div>
   </div>
   <div class="features">
     <div class="wrapper cf">
       <h2>Key Features</h2>
-      <article> <a href="#"><img src="design/feature-01.png" alt=""></a>
-        <p>Allow customers to order food from the light before.</p>
+      <div class="features customer" style="
+    padding-top: 10px;
+">
+      <h5>For Sellers</h5>
+      <article>
+        <button class="feature-buttons"><i class="material-icons" style="font-size:50px;">access_alarm</i> </button>
+        <!-- <a href="#"><img src="design/feature-01.png" alt=""></a> -->
+        <p>Owner can prepare the food in advance.</p>
       </article>
-      <article> <a href="#"><img src="design/feature-02.png" alt=""></a>
-        <p>Recommend new menu to customers.</p>
+      <article>  <button class="feature-buttons"><i class="material-icons" style="font-size:50px;">attach_money</i> </button>
+        <p>Owner can expend their business by more orders from the app.</p>
       </article>
-      <article class="last"> <a href="#"><img src="design/feature-03.png" alt=""></a>
-        <p>Less wait in line and more making food.</p>
+      <article class="last">  <button class="feature-buttons"><i class="material-icons" style="font-size:50px;">done</i> </button>
+        <p>Owner can use FeedWheel to recommend their menu to customers. </p>
+      </article>
+    </div>
+    <div class="features sellers">
+      
+      <h5 style="margin-top: 70px;">For Customers</h5>
+      <article>
+        <button class="feature-buttons"><i class="material-icons" style="font-size:50px;">calendar_today</i> </button>
+        <!-- <a href="#"><img src="design/feature-01.png" alt=""></a> -->
+        <p>Allow customers to order food from days before.</p>
+      </article>
+      <article>  <button class="feature-buttons"><i class="material-icons" style="font-size:50px;">list</i> </button>
+        <p>See wait time and how many orders are ahead.</p>
+      </article>
+      <article class="last">  <button class="feature-buttons"><i class="material-icons" style="font-size:50px;">description</i> </button>
+        <p>See intro and review of the food trucks and food.</p>
       </article>
     </div>
   </div>
-  
+  </div>
+
   <footer class="footer">
     <div class="wrapper cf">
-      <p class="f-right"> <a href="#"><img src="design/facebook.png" alt=""></a> <a href="#"><img src="design/twitter.png" alt=""></a> <a href="#"><img src="design/dribbble.png" alt=""></a> </p>
+      <p class="f-right"> <a href="https://www.facebook.com/thefeedwheel/" target="_blank"><img src="https://img.icons8.com/material/48/000000/facebook.png" alt=""></a> <a href="https://twitter.com/TheFeedWheel" target="_blank"><img src="https://img.icons8.com/material/48/000000/twitter.png" alt=""></a> <a href="https://www.instagram.com/officialfeedwheel/"><img src="https://img.icons8.com/material/48/000000/instagram-new.png"></a> </p>
       <p class="f-left"> ©&nbsp;FeedWheel<br>
-        </p>
+      </p>
     </div>
   </footer>
-  
-  </body></html>
+
+
+
+</body></html>
